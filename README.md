@@ -1,4 +1,4 @@
-<img src="https://github.com/leondap/images/blob/main/pets.jpg?raw=true" width="400" img align="right">
+<img src="https://github.com/leondap/images/blob/main/pets.jpg?raw=true" width="250" img align="right">
 
 
 # Potential-Extinction-upon-Time-Seires-PETS
