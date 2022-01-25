@@ -33,3 +33,5 @@ The simplest pets analysis only requires species membership and year.
 ```
 pets_run<-pets(gransasso$scientificName,gransasso$year)
 ```
+The analysis produces a figure where each row represent a species and the dots the years when it was recorded in the park. Species are ordered from those recorded more recently (top) to those last recorded in older times (bottom).
+![](https://github.com/leondap/images/blob/main/pets_res1.png?raw=true)
