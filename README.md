@@ -40,3 +40,7 @@ The PET index is provided in the $extinctionP value
 ```
 pets_run$extinctionP
 ```
+The last year of sampling can be imposed by using the end parametern (e.g. end=2021). Moreover, different types of observations can be visualised by including a obs_type vector.
+```
+pets_run2<-pets(gransasso$scientificName,gransasso$year, obs_type=gransasso$basisOfRecord, end=2021)
+```
