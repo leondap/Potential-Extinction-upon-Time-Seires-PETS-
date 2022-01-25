@@ -19,6 +19,7 @@ Where _first occ_ and _last occ_ are the year of the first and of the last obser
                                                                                              
 
 To use PETS first install the pets package
-
+```
 install.packages("remotes")
 remotes::install_github("leondap/iodatabase")
+```
