@@ -15,7 +15,6 @@ irst and last datum is considered as the persistence of the species in a given a
 
 <img src="https://github.com/leondap/images/blob/main/pets%20formula.jpg?raw=true" width="600">
 
-![](https://github.com/leondap/images/blob/main/pets%20formula.jpg?raw=true)
-
+Where _first occ_ and _last occ_ are the year of the first and of the last observation of the species _i_, respectively and last year is the _last year_ of observation; _n_ is the number of species occurring in the community.
                                                                                              
 
