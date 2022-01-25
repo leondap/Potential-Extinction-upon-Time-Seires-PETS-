@@ -36,7 +36,7 @@ pets_run<-pets(gransasso$scientificName,gransasso$year)
 The analysis produces a figure where each row represent a species and the dots the years when it was recorded in the park. Species are ordered from those recorded more recently (top) to those last recorded in older times (bottom).
 ![](https://github.com/leondap/images/blob/main/pets_res1.png?raw=true)
 
-The PET index is provided in the $extinctionP value
+The PET index (ranging between 0 and 1) is provided in the $extinctionP value 
 ```
 pets_run$extinctionP
 ```
@@ -51,5 +51,10 @@ Now some basic assessments can be done like removing inaturalist data and verify
 noinat<-gransasso[-which(gransasso$basisOfRecord=="inaturalist"),]
 pets_run3<-pets(noinat$scientificName,noinat$year, obs_type=noinat$basisOfRecord, end=2021)
 ```
-
+![](https://github.com/leondap/images/blob/main/pets_res3.png?raw=true)
+And the difference in the index values reveal the contribution of citizen science
+```
+pets_run$extinctionP
+pets_run3$extinctionP
+```
 
