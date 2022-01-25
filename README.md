@@ -18,3 +18,7 @@ irst and last datum is considered as the persistence of the species in a given a
 Where _first occ_ and _last occ_ are the year of the first and of the last observation of the species _i_, respectively and last year is the _last year_ of observation; _n_ is the number of species occurring in the community.
                                                                                              
 
+To use PETS first install the pets package
+
+install.packages("remotes")
+remotes::install_github("leondap/iodatabase")
