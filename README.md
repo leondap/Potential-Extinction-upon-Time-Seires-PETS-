@@ -29,4 +29,7 @@ inspect the data in Darwin core format for the butterflies of the national park 
 head(gransasso)
 ```
 We are interested in the following characteristics of occurrence data: species memebership (gransasso$scientificName), year of record: gransasso$year, type of observation (Literature, SAmple, iNaturalist): gransasso$basisOfRecord)
-The pets function in its simplest 
+The simplest pets analysis only requires species membership and year.
+```
+pets_run<-pets(gransasso$scientificName,gransasso$year)
+```
