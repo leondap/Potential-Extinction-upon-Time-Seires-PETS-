@@ -13,6 +13,8 @@ The PETS algorithm is based on comparing times when each species has been first 
 
 irst and last datum is considered as the persistence of the species in a given area while time since the last observation is considered as continuos measure for potential extinction. The PETS algorithm measure which is the overall fraction of the potential extinction (red area) against the total time since the first observation on the entire community by computing the formula:
 
+<img src="https://github.com/leondap/images/blob/main/pets%20formula.jpg?raw=true" width="600">
+
 ![](https://github.com/leondap/images/blob/main/pets%20formula.jpg?raw=true)
 
                                                                                              
