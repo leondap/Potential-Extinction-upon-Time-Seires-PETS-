@@ -1,10 +1,8 @@
-#taxa<-gransasso$scientificName
-#time<-gransasso$year
-#obs_type=gransasso$basisOfRecord
+
 pets<-function(taxa, time, obs_type=NULL, fauna=NULL, colours=c("red","green","blue","orange","purple"),end=NULL){
 res<-NULL
 if(is.null(obs_type)){
-  data<-as.data.frame(cbind(taxa,time,rep("observation",length(spec))))
+  data<-as.data.frame(cbind(taxa,time,rep("observation",length(taxa))))
 }else{
   data<-as.data.frame(cbind(taxa,time,obs_type))
 }
