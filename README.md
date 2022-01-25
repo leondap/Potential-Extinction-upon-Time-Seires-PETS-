@@ -38,5 +38,5 @@ The analysis produces a figure where each row represent a species and the dots t
 
 The PET index is provided in the $extinctionP value
 ```
-pets_run$extinctionP value
+pets_run$extinctionP
 ```
