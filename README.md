@@ -44,3 +44,5 @@ The last year of sampling can be imposed by using the end parametern (e.g. end=2
 ```
 pets_run2<-pets(gransasso$scientificName,gransasso$year, obs_type=gransasso$basisOfRecord, end=2021)
 ```
+Now the three kinds of obsrevations are reported in the figure with different colours (and indicated in the main title as a legend). The last colour of the colours argument (purple here) is used for occurrence data belonging to more than one kind of source.
+![](https://github.com/leondap/images/blob/main/pets_res2.png?raw=true)
