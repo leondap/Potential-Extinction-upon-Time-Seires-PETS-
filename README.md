@@ -21,5 +21,12 @@ Where _first occ_ and _last occ_ are the year of the first and of the last obser
 To use PETS first install the pets package
 ```
 install.packages("remotes")
-remotes::install_github("leondap/iodatabase")
+remotes::install_github("leondap/pets")
+library(pets)
 ```
+inspect the data in Darwin core format for the butterflies of the national park of the Gran Sasso-Monti della Laga
+```
+head(gransasso)
+```
+We are interested in the following characteristics of occurrence data: species memebership (gransasso$scientificName), year of record: gransasso$year, type of observation (Literature, SAmple, iNaturalist): gransasso$basisOfRecord)
+The pets function in its simplest 
