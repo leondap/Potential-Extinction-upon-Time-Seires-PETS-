@@ -46,3 +46,10 @@ pets_run2<-pets(gransasso$scientificName,gransasso$year, obs_type=gransasso$basi
 ```
 Now the three kinds of obsrevations are reported in the figure with different colours (and indicated in the main title as a legend). The last colour of the colours argument (purple here) is used for occurrence data belonging to more than one kind of source.
 ![](https://github.com/leondap/images/blob/main/pets_res2.png?raw=true)
+Now some basic assessments can be done like removing inaturalist data and verify their importance in reducing the perception of potential extinction
+```
+noinat<-gransasso[-which(gransasso$basisOfRecord=="inaturalist"),]
+pets_run3<-pets(noinat$scientificName,noinat$year, obs_type=noinat$basisOfRecord, end=2021)
+```
+
+
