@@ -57,4 +57,10 @@ And the difference in the index values reveal the contribution of citizen scienc
 pets_run$extinctionP
 pets_run3$extinctionP
 ```
+Where it is clear that the more than half of the potental extinction of the community of the Park was due to the lack of recent data and that iNaturalist observations halved the index
+> pets_run$extinctionP
+[1] 0.09149984
+> pets_run3$extinctionP
+[1] 0.1854186
+> 
 
