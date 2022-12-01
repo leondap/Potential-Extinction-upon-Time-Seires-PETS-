@@ -1,5 +1,6 @@
 
-pets<-function(taxa, time, obs_type=NULL, fauna=NULL, colours=c("red","green","blue","orange","purple"),end=NULL){
+
+pets<-function(taxa, time, obs_type=NULL, fauna=NULL, colours=c("red","green","blue","orange","purple"),persistence="palegreen". absence="pink", end=NULL){
 res<-NULL
 if(is.null(obs_type)){
   data<-as.data.frame(cbind(taxa,time,rep("observation",length(taxa))))
@@ -56,13 +57,19 @@ plot(rbind(c(start-2,0),c(end,length(species))),type="n",ylab="Species",xlab="ye
 mtext(paste(paste(c(tipidati,"Plural"),"=",col=c(colours[1:length(tipidati)],colours[length(colours)]),sep=""),collapse=", "),cex=0.5)
 #massimo per ogni specie
 for (sp in 1:length(species2)){
-  #sp<-100
+  #sp<-20
   datisp<-data[which(data[,1]==species2[sp]),]
 
 #if(!(is.null(nrow(datisp)))){
   annir<-datisp[!duplicated(cbind(datisp[,2],datisp[,3])),]
 
 annisp<-as.numeric(unique(annir[,2]))
+
+mi<-min(annisp, na.rm=T)
+ma<-max(annisp, na.rm=T)
+rect((mi-1.5),(sp-0.5),(ma)-0.5,(sp+0.5),col=persistence,border=T)
+rect((ma-1.5),(sp-0.5),(end)-0.5,(sp+0.5),col=absence,border=T)
+
 
 for (quad in 1:length(annisp)){
   #quad<-1
@@ -91,5 +98,6 @@ res$extinctionP<-sum(end-last_sp, na.rm=T)/sum(end-first_sp, na.rm=T)
 res$table<-as.data.frame(cbind(species2,first_sporder,last_sporder))
 return(res)
 }
+
 
 
