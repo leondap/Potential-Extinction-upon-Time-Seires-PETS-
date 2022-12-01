@@ -1,6 +1,6 @@
 
 
-pets<-function(taxa, time, obs_type=NULL, fauna=NULL, colours=c("red","green","blue","orange","purple"),persistence="palegreen". absence="pink", end=NULL){
+pets<-function(taxa, time, obs_type=NULL, fauna=NULL, colours=c("red","green","blue","orange","purple"),persistence="palegreen", absence="pink", end=NULL){
 res<-NULL
 if(is.null(obs_type)){
   data<-as.data.frame(cbind(taxa,time,rep("observation",length(taxa))))
