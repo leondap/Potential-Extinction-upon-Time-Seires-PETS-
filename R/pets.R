@@ -14,6 +14,8 @@ if (length(checksp)>0){
   stop(paste("There are species absent in the checklist:",checksp))
 }
 }
+res$observations<-length(which(!(is.na(time)))
+res$NA_observation<-length(which(is.na(time))
 anni<-NULL
 for(sp in 1:length(species)){
 #sp<-1
