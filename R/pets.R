@@ -97,7 +97,7 @@ arrows((start-2.5),(sp-0.5),(annisp[quad]-0.5),(sp-0.5), length =0)
  }
 }
 }
-res$extinctionP<-sum(end-last_sp, na.rm=T)/sum(end-first_sp, na.rm=T)
+res$extinctionP<-sum(end-last_sp, na.rm=T)/sum((end-first_sp+1), na.rm=T)
 res$table<-as.data.frame(cbind(species2,first_sporder,last_sporder))
 return(res)
 }
