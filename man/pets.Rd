@@ -45,7 +45,6 @@ The PETS algorithm measure which is the overall fraction in a community of the p
 \item{extinctionP}{
 The value of the PETS index.
 }
-value{
 \item{table}{
 The table containing the list of species together with their first and last obsrevations.
 }
