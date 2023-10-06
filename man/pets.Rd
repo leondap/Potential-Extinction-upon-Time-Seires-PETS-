@@ -4,11 +4,12 @@
 Calculate the Potential Extinction upon Time Series (PETS) index.
 }
 \description{
-The PETS index calculate the completeness of time series for a given community based on occurrence data. Incomplete time series for recent year can be due to local extinction and/or lack of knowledge.
+The PETS index calculate the completeness of time series for a given community based on occurrence data. 
+Incomplete time series for recent year can be due to local extinction and/or lack of knowledge.
 }
 \usage{
 pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","green","blue","orange","purple"),
-persistence="palegreen", absence="pink", end=NULL){
+persistence="palegreen", absence="pink", end=NULL)
 }
 \arguments{
   \item{taxa}{
