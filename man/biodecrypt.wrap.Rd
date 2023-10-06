@@ -8,7 +8,7 @@ The PETS index calculate the completeness of time series for a given community b
 }
 \usage{
 pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","green","blue","orange","purple"),
-persistence="palegreen", absence="pink", end=NULL){
+persistence="palegreen", absence="pink", end=NULL)
 }
 \arguments{
   \item{taxa}{
