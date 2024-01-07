@@ -46,11 +46,11 @@ The PETS algorithm measure which is the overall fraction in a community of the p
 The value of the PETS index.
 }
 \item{table}{
-The table containing the list of species together with their first and last obsrevations.
+The table containing the list of species together with their first and last observations and with the fraction the species is unrecorded compared to time passed since the first record.
 }
 }
 \references{
-Labadessa, R., Cagnetta, G., Desaphy, J. F., Bonifacino, M., Dodaro, G., Festa, D., Monterastelli, E., Papa, V., E., Zollo, L., Balletto, E., DAPPORTO, L. (2021). Using occurrence data to evaluate extinction reveals a strong resilience of butterflies in a National Park of Southern Europe (Alta Murgia National Park). Journal of Insect Biodiversity, 28(1), 1-12.
+Labadessa, R., Cagnetta, G., Desaphy, J. F., Bonifacino, M., Dodaro, G., Festa, D., Monterastelli, E., Papa, V., E., Zollo, L., Balletto, E., Dapporto, L. (2021). Using occurrence data to evaluate extinction reveals a strong resilience of butterflies in a National Park of Southern Europe (Alta Murgia National Park). Journal of Insect Biodiversity, 28(1), 1-12.
 }
 \author{
 Leonardo Dapporto
