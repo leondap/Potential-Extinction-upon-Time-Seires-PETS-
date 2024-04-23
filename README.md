@@ -1,4 +1,5 @@
 <img src="https://github.com/leondap/images/blob/main/pets.jpg?raw=true" width="250" img align="right">
+<img src="https://github.com/leondap/images/blob/main/pnrr.jpg?raw=true"width="200" img align="right">
 
 
 # Potential-Extinction-upon-Time-Series-PETS
@@ -10,7 +11,6 @@ The PETS algorithm is based on comparing times when each species has been first 
 
 
 <img src="https://github.com/leondap/images/blob/main/petsexample.jpg?raw=true" width="600">
-<img src="https://github.com/leondap/images/blob/main/pnrr.jpg?raw=true"width="400">
 
 The difference between the first and last datum is considered as the persistence of a species in a given area while time since the last observation is considered as continuos measure for potential extinction. The PETS algorithm measure which is the overall fraction of the potential extinction (red area) against the total time since the first observation on the entire community by computing the formula:
 
