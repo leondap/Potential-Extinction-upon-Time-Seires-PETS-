@@ -68,4 +68,8 @@ Where it is clear that the more than half of the potental extinction of the comm
 pets_run3$extinctionP
 0.1854186
 
-
+The pets function also provides a table
+```
+pets_run$table
+```
+where the species are ordered from the ones with a longer last occ to those observed in more recent time (same order from 1 to n in the graph). The first and the last year of observation together of an individual pets value (
