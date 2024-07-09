@@ -5,6 +5,6 @@ Version: 1.2
 Author: Leonardo Dapporto
 Maintainer: Maintainer: Leonardo Dapporto <leonardo.dapporto@unifi.it>
 Description: The Potential Extinction upon Time Series algorithm, evaluate the possibility that a community has been eroded in time due to extinction events and/or it has been undersampled in recent times.
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
