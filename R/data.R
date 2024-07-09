@@ -1,4 +1,9 @@
 
 load_gransasso <- function() {
-    load(system.file("data/gransasso.RData", package = "pets"))
+  data_path <- system.file("data/gransasso.RData", package = "nome_pacchetto")
+  if (file.exists(data_path)) {
+    load(data_path, envir = .GlobalEnv)
+  } else {
+    stop("Dataset gransasso not found.")
+  }
 }
