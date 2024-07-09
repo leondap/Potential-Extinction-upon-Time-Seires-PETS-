@@ -26,8 +26,9 @@ install.packages("remotes")
 remotes::install_github("leondap/pets")
 library(pets)
 ```
-inspect the data in Darwin core format for the butterflies of the national park of the Gran Sasso-Monti della Laga
+load and inspect the data in Darwin core format for the butterflies of the national park of the Gran Sasso-Monti della Laga
 ```
+data(gransasso)
 head(gransasso)
 ```
 We are interested in the following characteristics of occurrence data: species memebership (gransasso$scientificName), year of record: gransasso$year, type of observation (Literature, SAmple, iNaturalist): gransasso$basisOfRecord)
