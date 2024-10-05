@@ -7,7 +7,7 @@
 Monitoring is essential for detecting trends and to identify species deserving conservation efforts. However, in most regions and areas, monitoring scheme did not exist or they have been only recently implemented. For this reason it is fundamental to evaluate the degree to which a community appears eroded in time as a possible outcome of two possible causes: 1) species that went extinct; 2) lack of recent occurrence data providing a false signal of extinction.
 We implemented an index to calculate Potential Extincion upon Time Series (PETS) at community level and provided the pets function to calculate it.
 
-The PETS algorithm is a modification of the extinctions per million species-years formula but instead of number of extinctions it evaluates the apparent absence in recent time for each species for a given area as shown below.
+The PETS algorithm introduced by Labadessa et al. (2021) is a modification of the extinctions per million species-years formula (Pimm et al. 2014) but instead of number of extinctions it evaluates the apparent absence in recent time for each species for a given area as shown below.
 
 
 <img src="https://github.com/leondap/images/blob/main/petsexample.jpg?raw=true" width="600">
@@ -74,3 +74,10 @@ The pets function also provides a table
 pets_run$table
 ```
 where the species are ordered from the ones with a longer last occ to those observed in more recent time (same order from 1 to n in the graph). The first and the last year of observation together of an individual pets value (last year-last occ)/((last year-first occ)+1) is provided in the last column.
+
+
+References
+
+Labadessa, R., Cagnetta, G., Desaphy, J. F., Bonifacino, M., Dodaro, G., Festa, D., ... & Dapporto, L. (2021). Using occurrence data to evaluate extinction reveals a strong resilience of butterflies in a National Park of Southern Europe (Alta Murgia National Park). Journal of Insect Biodiversity, 28(1), 1-12.
+
+Pimm, S. L., Jenkins, C. N., Abell, R., Brooks, T. M., Gittleman, J. L., Joppa, L. N., ... & Sexton, J. O. (2014). The biodiversity of species and their rates of extinction, distribution, and protection. science, 344(6187), 1246752.
