@@ -77,7 +77,7 @@ pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","g
   					}
 					rect(((annisp[quad])-1.5),(sp-0.5),((annisp[quad])-0.5),(sp+0.5),col=colore,border=T)
 				}
-				arrows((start-2.5),(sp-0.5),(annisp[quad]-0.5),(sp-0.5), length =0)
+				arrows((firsty-2.5),(sp-0.5),(annisp[quad]-0.5),(sp-0.5), length =0)
 			}
  			if(length(match)==0){
     				colore<-"grey"
