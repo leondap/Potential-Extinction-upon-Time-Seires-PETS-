@@ -7,7 +7,7 @@
 Monitoring is essential for detecting trends and to identify species deserving conservation efforts. However, in most regions and areas, monitoring scheme did not exist or they have been only recently implemented. For this reason it is fundamental to evaluate the degree to which a community appears eroded in time as a possible outcome of two possible causes: 1) species that went extinct; 2) lack of recent occurrence data providing a false signal of extinction.
 We implemented an index to calculate Potential Extincion upon Time Series (PETS) at community level and provided the pets function to calculate it.
 
-The PETS algorithm is based on comparing times when each species has been first and last observed for a given area as shown below.
+The PETS algorithm is a modification of the extinctions per million species-years formula but instead of number of extinctions it evaluates the apparent absence in recent time for each species for a given area as shown below.
 
 
 <img src="https://github.com/leondap/images/blob/main/petsexample.jpg?raw=true" width="600">
@@ -18,6 +18,7 @@ The difference between the first and last datum is considered as the persistence
 
 
 Where _first occ_ and _last occ_ are the year of the first and of the last observation of the species _i_, respectively and last year is the _last year_ of observation; _n_ is the number of species occurring in the community.
+This formula has desirable properties, as it ranges between 0 and 1, with a score of 0 indicating that all species were observed in the last year, and 1 indicating that all species have been observed. Moreover, it intuitively calculates the overall fraction of completeness in recent time series.
                                                                                              
 
 To use PETS first install the pets package
