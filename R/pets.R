@@ -1,5 +1,11 @@
-pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","green","blue","orange","purple"),persistence="palegreen", absence="pink", end=NULL){
+pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","green","blue","orange","purple"),persistence="palegreen", absence="pink", end=NULL, firsty=NULL){
 	res<-NULL
+	if(is.null(firsty)){
+  		firsty<-min(time)
+	}
+	if(is.null(end)){
+  		end<-max(time)
+	}
 	if(is.null(obs_type)){
   		data<-as.data.frame(cbind(taxa,time,rep("observation",length(taxa))))
 	}else{
@@ -46,7 +52,7 @@ pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","g
 	last_sporder<-last_sp[ordine]
 	first_sporder<-first_sp[ordine]
 	if(plot){
-		plot(rbind(c(start-2,0),c(end,length(species))),type="n",ylab="Species",xlab="years")
+		plot(rbind(c(start-2,0),c(end,length(species))),type="n",ylab="Species",xlab="years", xlim=c(firsty,end))
 		mtext(paste(paste(c(tipidati,"Plural"),"=",col=c(colours[1:length(tipidati)],colours[length(colours)]),sep=""),collapse=", "),cex=0.5)
 		for (sp in 1:length(species2)){
   			datisp<-data[which(data[,1]==species2[sp]),]
