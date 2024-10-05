@@ -9,7 +9,7 @@ Incomplete time series for recent year can be due to local extinction and/or lac
 }
 \usage{
 pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","green","blue","orange","purple"),
-persistence="palegreen", absence="pink", end=NULL)
+persistence="palegreen", absence="pink", end=NULL, firsty=NULL)
 }
 \arguments{
   \item{taxa}{
@@ -35,6 +35,9 @@ The colour to be attributed to the persistence segment in the plot.
 }
 \item{end}{
 The last year for the calculation of the PETS index, if NULL the last year in the year vector is used.
+}
+\item{firsty}{
+The first year to be imposed in the graph, if NULL the first year of record is used.
 }
 }
 \details{
