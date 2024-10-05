@@ -79,7 +79,7 @@ pets<-function(taxa, time, obs_type=NULL, fauna=NULL, plot=T, colours=c("red","g
  			}
 		}
 	}
-	petsind<-round((end-last_sporder)/((end-first_sporder)+1),5)
+	petsind<-round((end-last_sporder)/((end-first_sporder)),5)
 	res$extinctionP<-sum(end-last_sp, na.rm=T)/sum((end-first_sp), na.rm=T)
 	res$table<-as.data.frame(cbind(species2,first_sporder,last_sporder,petsind))
 	colnames(res$table)<-c("Species","first rec","last rec", "Abscence fraction")
